@@ -1,11 +1,9 @@
-from textnode import TextNode
+from textnode import TextNode, TextType
+
 
 def main():
-    print("hello world")
+    node = TextNode("This is a text node", TextType.BOLD_TEXT, "https://www.boot.dev")
+    print(node)
 
-node = TextNode("text", "link", "url")
 
-print(repr(node))
-
-if __name__ == "__main__":
-    main()
+main()
